@@ -1,6 +1,6 @@
-module Lib
-  ( main
-  ) where
+module Lib (
+  main,
+) where
 
 main :: IO ()
 main = pure ()
