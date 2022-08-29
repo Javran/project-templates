@@ -23,6 +23,7 @@ There are situations that:
 - Non-infix version is more readable
 - Pointfree is pointless
 - Changing back and forth between `data` and `newtype` is an annoyance
+- ... and many random reasons that you don't think HLint is making sensible decisions.
 
 Thus `.hlint.yaml` is a curated rule that disable lints that IMO does more harm than good,
 especially when one just kicking off a project.
@@ -46,6 +47,8 @@ They provide secure benefits, I get it. But I'll only care when I need to.
 
 ## Applying the templatex
 
+See [Official doc](https://docs.haskellstack.org/en/stable/GUIDE/#the-stack-new-command).
+
 For the record, I have following content in my `~/.stack/config.yaml`
 to override stack's default template:
 
@@ -59,3 +62,6 @@ default-template: 'https://raw.githubusercontent.com/Javran/project-templates/ma
 ```
 
 Note that you might need to replace resolver in `stack.yaml` with whatever version appropriate.
+
+We choose to hard-code `stack.yaml` so that we don't get excessive comments in it and
+`stack` won't cost some extra network traffic just to determine which snapshot should we use.
