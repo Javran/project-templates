@@ -1,8 +1,7 @@
 # Javran's Opinionated Project Templates
 
-For now this directory contains just the `simple.hsfiles` template that
-derives from the default Stack project template ~~with all unnecessary junks removed~~
-that fits my personal taste.
+It's probably a good thing that Haskell isn't part of my work,
+so I can keep being picky about things.
 
 ## Principles
 
@@ -13,6 +12,9 @@ No spacing-aligning practices, they are simply noisy and counter-productive.
 Maybe a formatter can do that for your,
 but I believe a project should never requrie specific code formatter for developers
 to be productive editing while keeping the style in line with rest of the codebase.
+
+Don't use Unicode symbols. I hate being forced to type `\` all the time (or having
+to install some sort of plugin to make typing those stuff easier).
 
 ### Don't Apply Everything Stock HLint Says
 
