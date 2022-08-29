@@ -6,14 +6,14 @@ author: Javran Cheng
 maintainer: javran.c@gmail.com
 description: description
 
+ghc-options:
+  - -Wall
+
 dependencies:
 - base
 
 library:
   source-dirs: src
-  ghc-options:
-    - -Wall
-    - -O2
 
 executables:
   demo:
@@ -22,7 +22,6 @@ executables:
     dependencies:
       - simple
     ghc-options:
-      - -Wall
       - -O2
       - -threaded
       - -rtsopts
@@ -38,7 +37,6 @@ tests:
       - QuickCheck
       - hspec
     ghc-options:
-      - -Wall
       - -O2
       - -threaded
       - -rtsopts
