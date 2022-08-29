@@ -1,9 +1,9 @@
-name: simple
+name: {{name}}
 version: 0.1.0.0
-github: Javran/simple
+github: {{github-username}}{{^github-username}}githubuser{{/github-username}}/{{name}}
 license: BSD3
-author: Javran Cheng
-maintainer: javran.c@gmail.com
+author: {{author-name}}{{^author-name}}Author name here{{/author-name}}
+maintainer: {{author-email}}{{^author-email}}example@example.com{{/author-email}}
 description: description
 
 ghc-options:
@@ -64,7 +64,7 @@ executables:
     main: Main.hs
     source-dirs: exe
     dependencies:
-      - simple
+      - {{name}}
     ghc-options:
       - -O2
       - -threaded
@@ -77,7 +77,7 @@ tests:
     source-dirs:
       - test
     dependencies:
-      - simple
+      - {{name}}
       - QuickCheck
       - hspec
     ghc-options:

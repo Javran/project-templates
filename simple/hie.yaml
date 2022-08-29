@@ -1,8 +1,8 @@
 cradle:
   stack:
     - path: "./src"
-      component: "simple:lib"
+      component: "{{name}}:lib"
     - path: "./exe"
-      component: "simple:exe:demo"
+      component: "{{name}}:exe:demo"
     - path: "./test"
-      component: "simple:test:hspec"
+      component: "{{name}}:test:hspec"
