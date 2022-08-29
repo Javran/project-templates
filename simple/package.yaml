@@ -14,6 +14,10 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+    - bytestring
+    - containers
+    - text
 
 executables:
   demo:
