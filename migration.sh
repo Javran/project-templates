@@ -49,7 +49,7 @@ do
   sed_args=(${sed_args[@]} -e "/{-# LANGUAGE $ext #-}/d")
 done
 
-for dir in src exe test
+for dir in src exe test mains
 do
   if [ -d "$dir" ]
   then
