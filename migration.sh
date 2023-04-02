@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# A simple script to help with adapting existing projects
+# into using this template.
+# Run this script from project home (where `src`, `test`, etc. are located).
+
 # TODO: list must be kept in sync with the list of extensions.
 exts=(
   BangPatterns
