@@ -43,6 +43,7 @@ newlines-between-decls: 1
 haddock-style: multi-line
 respectful: true
 fixities: []
+single-constraint-parens: false
 
 {-# START_FILE hie.yaml #-}
 cradle:
@@ -65,6 +66,7 @@ description: description
 
 ghc-options:
   - -Wall
+  - -Wno-incomplete-uni-patterns
 
 default-extensions:
   - BangPatterns
@@ -153,7 +155,7 @@ main :: IO ()
 main = pure ()
 
 {-# START_FILE stack.yaml #-}
-resolver: lts-19.20
+resolver: lts-21.9
 packages:
 - .
 
